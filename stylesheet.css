@@ -1,0 +1,28 @@
+
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    
+}
+#mainDiv{
+    align-self: flex-start;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    margin-top: 200px;
+    
+
+}
+.mainContext{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2px;
+} 
+
+#txt{
+    visibility: hidden;
+    color: blueviolet;
+}
