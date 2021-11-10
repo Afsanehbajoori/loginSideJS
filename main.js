@@ -8,6 +8,7 @@ var form = document.getElementsByTagName('form');
 var errorPass=document.getElementById('errorPass');
 var radioValid= document.getElementsByClassName('radioValid');
 var errorCh=document.getElementById('errorCh');
+var date=document.getElementById('date');
 
 
 btn.addEventListener('click' , (e) =>{
@@ -18,9 +19,10 @@ btn.addEventListener('click' , (e) =>{
 
    if(username === "user1" && password === "user1")
    {
+    txt.style.visibility='hidden';
     alert('successful');
     window.open('http://google.com');
-    txt.style.visibility='hidden';
+    
      
    }
    if(radioValid[0].checked || radioValid[1].checked){
@@ -28,11 +30,15 @@ btn.addEventListener('click' , (e) =>{
         errorCh.style.visibility='hidden';
         //alert('check one');
    }
+   if(!date.value ==''){
+    date.style.backgroundColor='white';
+   }
    else{
        //alert('not successful');
        txt.style.visibility='visible';
        errorCh.textContent='Have to select one';
         errorCh.style.color='red';
+        date.style.backgroundColor='red';
        
    }
 })
