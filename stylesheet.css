@@ -11,7 +11,8 @@ h1{
     display: grid;
     justify-items: center;
     align-items: center;
-    margin-top: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     
 
 }
@@ -25,4 +26,26 @@ h1{
 #txt{
     visibility: hidden;
     color: blueviolet;
+}
+
+legend{
+    font-size: 15px;
+    text-align: center;
+    color:darkcyan;
+}
+/* fieldset>label{
+    display: flex;
+    justify-content: left;
+    color: chocolate;
+} */
+#chTitle{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
+#listTitle{
+    list-style-type: none;
+}
+#errorTxt{
+    color: darkred;
 }

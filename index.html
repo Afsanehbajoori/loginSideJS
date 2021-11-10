@@ -8,17 +8,39 @@
     </head>
     <body>
         <main>
+            
             <h1>Login Side</h1>
-
+        
             <div>
                 <p id="txt" >Invalid username or password</p>
             </div>
-        
-        <form id="mainDiv">
-            <input placeholder="Username" id="username" type="text" class="mainContext" name="username"><br>
-            <input placeholder="Password" id="password" type="password" class="mainContext" name="password"><br>
+    <fieldset>
+        <form id="mainDiv" novalidate>
+            <fieldset id="chTitle">
+                <legend>Title</legend>
+                <ul id="listTitle">
+                    <li>
+                        <label for="student">Student</label>
+                        <input type="radio" name="title" value="student" class="radioValid">
+                    </li>
+                    <li>
+                        <label for="teacher">Teacher</label>
+                        <input type="radio" name="title" value="teacher" class="radioValid">
+                    </li>
+                </ul>
+            </fieldset>
+
+            <label for="username">username:
+            <abbr title="required">*</abbr>
+            <input placeholder="Username" id="username" type="text" class="mainContext" name="username" required minlength="3">
+            <p id="errorTxt"></p></label><br>
+            <label for="password">password:
+            <abbr title="required">*</abbr>
+            <input placeholder="Password" id="password" type="password" class="mainContext" name="password" required minlength="3">
+            <p id="errorPass"></p></label><br>
             <input type="submit" id="btn" value="Login">
         </form>
+    </fieldset>
         </main>
         <script src="./main.js"></script>
     </body>
