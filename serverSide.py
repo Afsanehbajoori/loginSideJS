@@ -8,7 +8,8 @@ def form():
 
 @app.route('/hello', methods=['GET', 'POST'])
 def hello():
-    return render_template('greeting.html', say=request.form['say'], to=request.form['to'])
+    return render_template('greeting.html')
+    # return render_template('greeting.html', say=request.form['say'], to=request.form['to'])
 
 if __name__ == "__main__":
     app.run()
