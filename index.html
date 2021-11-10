@@ -15,10 +15,13 @@
                 <p id="txt" >Invalid username or password</p>
             </div>
     <fieldset>
+        <p id="errorCh"></p>
         <form id="mainDiv" novalidate>
             <fieldset id="chTitle">
                 <legend>Title</legend>
+                
                 <ul id="listTitle">
+                    
                     <li>
                         <label for="student">Student</label>
                         <input type="radio" name="title" value="student" class="radioValid">
@@ -27,8 +30,11 @@
                         <label for="teacher">Teacher</label>
                         <input type="radio" name="title" value="teacher" class="radioValid">
                     </li>
+                   
                 </ul>
+                
             </fieldset>
+            
 
             <label for="username">username:
             <abbr title="required">*</abbr>
@@ -38,6 +44,15 @@
             <abbr title="required">*</abbr>
             <input placeholder="Password" id="password" type="password" class="mainContext" name="password" required minlength="3">
             <p id="errorPass"></p></label><br>
+        <section>
+            <select id="multi" name="usercard">
+                <option value="visa">Visa</option>
+                <option value="mc">MasterCard</option>
+            </select>
+            <label for="expire">
+                <input type="date" id="date">
+            </label>
+        </section>
             <input type="submit" id="btn" value="Login">
         </form>
     </fieldset>

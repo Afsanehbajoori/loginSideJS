@@ -7,6 +7,7 @@ var errorTxt=document.getElementById('errorTxt');
 var form = document.getElementsByTagName('form');
 var errorPass=document.getElementById('errorPass');
 var radioValid= document.getElementsByClassName('radioValid');
+var errorCh=document.getElementById('errorCh');
 
 
 btn.addEventListener('click' , (e) =>{
@@ -17,15 +18,22 @@ btn.addEventListener('click' , (e) =>{
 
    if(username === "user1" && password === "user1")
    {
-       alert('successful');
-       window.open('http://google.com');
+    alert('successful');
+    window.open('http://google.com');
+    txt.style.visibility='hidden';
+     
    }
-   if(!(radioValid[0].checked || radioValid[1].checked)){
-       alert('check one');
+   if(radioValid[0].checked || radioValid[1].checked){
+        
+        errorCh.style.visibility='hidden';
+        //alert('check one');
    }
    else{
        //alert('not successful');
        txt.style.visibility='visible';
+       errorCh.textContent='Have to select one';
+        errorCh.style.color='red';
+       
    }
 })
 
