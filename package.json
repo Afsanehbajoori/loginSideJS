@@ -1,0 +1,26 @@
+{
+  "name": "loginsidejs",
+  "version": "1.0.0",
+  "description": "first web server with nodejs",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express" :"^4.17.1",
+    "pug":"^3.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Afsanehbajoori/loginSideJS.git"
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "author": "Afsaneh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Afsanehbajoori/loginSideJS/issues"
+  },
+  "homepage": "https://github.com/Afsanehbajoori/loginSideJS#readme"
+}
