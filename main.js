@@ -21,7 +21,7 @@ btn.addEventListener('click' , (e) =>{
    {
     txt.style.visibility='hidden';
     alert('successful');
-    window.open('http://google.com');
+    //window.open('http://google.com');
     
      
    }

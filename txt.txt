@@ -1,0 +1,8 @@
+first in the command promp , make a virtual envirement with command : python -3 -m venv .venv
+in the command promp , have to atcivate this envirement with command : .venv\scripts\activate
+in the command promp open vs code : code .
+make sure at you are in the envirement , se blue line helt ned : python 3.10.0 64-bit('.venv':venv)
+update pip : python -m pip install --upgrade pip
+install flask: python -m pip install flask
+make a app.py file :
+run flask : python -m flask run
