@@ -1,15 +1,23 @@
 const express = require("express")
-let app = new express();
+const app = express();
+const path=require('path');
+const router = express.Router();
 
-app.get('/index' , function(req,res){
-    res.send('index.html');
-})
 
-app.get('/next' , function(req,res){
-    res.send('next.html');
-})
+router.get('/index' , function(req,res){
+    res.sendFile(path.join(__dirname+'index.html'));
+    // res.send('index.html');
+});
 
-let port = 12346;
+router.get('/next' , function(req,res){
+    res.sendFile(path.join(__dirname+'next.html'));
+});
+
+app.use('/' , router);
+app.listen(process.env.port || 1234);
+
+console.log('running at port 1234');
+/* let port = 12346;
 app.listen(port , function(){
     console.log("server listen to port:" + port);
-})
+}) */
