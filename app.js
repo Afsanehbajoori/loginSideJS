@@ -2,7 +2,10 @@ const express = require("express")
 const app = express();
 const path=require('path');
 const router = express.Router();
-//var main = require('./main').main;
+var sql = require('mssql');
+var config = {
+    connectionString :''
+}
 
 
 router.get('/index' , function(req,res){
@@ -25,7 +28,7 @@ router.get('/next' , function(req,res){
 /* app.use('/' , router);
 app.listen(process.env.port || 1234); */
 
-/*  router.get('/', function(req,res){
+/* router.get('/', function(req,res){
     res.redirect(__dirname+'/index.html')
 }); */
 

@@ -17,7 +17,7 @@ make a file : app.js
 run a file: node app.js in the console
 show updatering in the file: nodemon app.js 
 make package.jason file with : npm init
-install extention : code runner
+install extension : code runner
 add dependency in the package.jason file: 
 {
   "name": "hello",
@@ -42,4 +42,15 @@ add dependency in the package.jason file:
 }
 
 update : npm update
+
+
+open sql server:
+instal mssql extension
+open a new file: File > new file
+select a language som sql
+connect to sql server : ctrl+shift+p 
+select : MS SQL :connect
+in the new file : write sql and select sqlcreatedatabase
+
+
 
