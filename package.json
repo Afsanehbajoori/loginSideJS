@@ -2,7 +2,7 @@
   "name": "loginsidejs",
   "version": "1.0.0",
   "description": "first web server with nodejs",
-  "main": "main.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
