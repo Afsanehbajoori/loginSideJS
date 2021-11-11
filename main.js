@@ -21,7 +21,10 @@ btn.addEventListener('click' , (e) =>{
    {
     txt.style.visibility='hidden';
     alert('successful');
+    window.location.replace('http://localhost:1234/next');
+    //window.open('http://localhost:1234/next');
     //window.open('http://google.com');
+
     
      
    }
