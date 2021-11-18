@@ -3,11 +3,13 @@ const routerUser = express.Router();
 
 let users=[
     {
-        Name : "Allan" , 
-        Username : "alliii",
-        password : "user123"
+        Name : "Allan", 
+        Username : "Allliiiii",
+        password : "Allan123"
     }
 ];
+
+
 
 routerUser.get('/' , function(req , res) {
     console.log(users);
