@@ -15,6 +15,7 @@
                 <p id="txt" >Invalid username or password</p>
             </div>
     <fieldset>
+        <div>
         <p id="errorCh"></p>
         <form id="mainDiv" novalidate action="/next" method="post">
             <fieldset id="chTitle">
@@ -55,8 +56,15 @@
         </section>
             <input type="submit" id="btn" value="Login">
         </form>
+    </div>
+    <div>
+        <form action="/register">
+            <label>New Here?</label>
+            <input value="Register" type="submit">
+        </form>
+    </div>
     </fieldset>
         </main>
         <script src="./main.js"></script>
     </body>
-</html>
+</html> 
